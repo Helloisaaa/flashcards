@@ -1,5 +1,11 @@
+:root{
+    --text-color: #DBE4EF;
+    --card-front-color: #144480;
+    --card-back-color: #00FABF;
+}
+
 body{
-    background-color: hotpink;
+    background-color: url(img/bg-desktop.webp);
     font-family: bai jamjuree;
 }
 
@@ -9,7 +15,7 @@ body{
 
 .cartao{
     margin: 1rem 1rem; 
-    background-color: deeppink;
+    
     height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33%-6rem);
@@ -17,8 +23,12 @@ body{
 
 .cartao__conteudo{
     text-align: center;
-    background-color: rgb(245, 159, 216);
+    background-color: var(--card-front-color);
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
 }
+
 
 footer{
     background-color: black;
@@ -36,10 +46,26 @@ footer p{
 }
 .cartao__conteudo h3{
     color: var(--text-color);
+    border: 1px solid var(--text-color);
     text-align: left;
     padding: 0.5rem;
     position: absolute;
     margin: 0.6rem;
     border-radius: 0.6rem;
     font-size: 1vw;
+}
+
+.cartao__conteudo_pergunta p {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.cartao__conteudo_resposta p {
+    color: var(--card-back-color);
+    font-weight: 700;
+
+}
+
+.cartao:hover.cartao__conteudo {
+    transform: rotateY(180deg);
 }
