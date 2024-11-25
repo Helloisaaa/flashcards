@@ -31,5 +31,5 @@ criaCartao(
 criaCartao(
     'Língua portuguesa',
     'O que é uma hipérbole?',
-    'Hipérbole é uma exageração usda para enfatizar uma ideia.'
+    'Hipérbole é uma exageração usada para enfatizar uma ideia.'
 )
