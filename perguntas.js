@@ -21,3 +21,15 @@ criaCartao(
     'Como se diz oi em inglês?',
     'Oi em inglês é HI.'
 )
+
+criaCartao(
+    'matemática',
+    'Qua a raiz quadrada de 9?',
+    'A raiz qudrada de 9 é 3.'
+)
+
+criaCartao(
+    'Língua portuguesa',
+    'O que é uma hipérbole?',
+    'Hipérbole é uma exageração usda para enfatizar uma ideia.'
+)
